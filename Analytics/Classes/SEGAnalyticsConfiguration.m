@@ -14,7 +14,6 @@
 
 @property (nonatomic, copy, readwrite) NSString *writeKey;
 @property (nonatomic, strong, readonly) NSMutableArray *factories;
-
 @end
 
 

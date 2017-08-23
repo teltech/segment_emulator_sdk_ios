@@ -183,7 +183,7 @@ static CTTelephonyNetworkInfo *_telephonyNetworkInfo;
         @"height" : @(screenSize.height)
     };
     
-    dict[@"groupId"] = @"spoofcard"; // Inserting groupId
+    dict[@"groupId"] = self.configuration.groupId; // Inserting groupId
     
 
 #if !(TARGET_IPHONE_SIMULATOR)

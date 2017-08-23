@@ -34,6 +34,11 @@ typedef NSMutableURLRequest * _Nonnull(^SEGRequestFactory)(NSURL * _Nonnull);
 @property (nonatomic, copy, readonly, nonnull) NSString *writeKey;
 
 /**
+ * GroupID to send on requests
+ */
+@property (nonatomic, strong, nullable) NSString *groupId;
+
+/**
  * Whether the analytics client should use location services.
  * If `YES` and the host app hasn't asked for permission to use location services then the user will be presented with an alert view asking to do so. `NO` by default.
  * If `YES`, please make sure to add a description for `NSLocationAlwaysUsageDescription` in your `Info.plist` explaining why your app is accessing Location APIs.
